@@ -14,10 +14,19 @@ network_check
 update_os
 
 msg_info "Install dependencies"
+
 apk add git
+msg_ok "Installed git"
+
 apk add yarn
-apk add cargo
-apk add nodejs
+msg_ok "Installed Yarn"
+
+apk add rustup
+msg_ok "installed Rustup"
+
+msg_info "Donwloading rust nightly"
+rustup install nightly
+msg_ok "Installed Rust nightly"
 
 msg_info "Building Droplet"
 git clone https://github.com/Drop-OSS/droplet.git /opt/droplet && cd /opt/droplet
