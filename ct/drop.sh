@@ -5,7 +5,7 @@ source <(curl -fsSL https://raw.githubusercontent.com/lockenkop/ProxmoxVE/drop/m
 # License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
 # Source: https://adguardhome.com/
 
-APP="Drop Server"
+APP="drop"
 var_tags="${var_tags:-alpine;drop}"
 var_cpu="${var_cpu:-1}"
 var_ram="${var_ram:-512}"
