@@ -22,6 +22,8 @@ apk add yarn
 msg_ok "Installed Yarn"
 
 apk add rustup
+rustup-init -y
+. "$HOME/.cargo/env"
 msg_ok "installed Rustup"
 
 msg_info "Donwloading rust nightly"
