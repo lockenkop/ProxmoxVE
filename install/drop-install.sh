@@ -13,6 +13,10 @@ setting_up_container
 network_check
 update_os
 
+msg_info "Install dependencies"
+apk add git -y
+apk add yarn -y
+
 msg_info "Building Droplet"
 git clone https://github.com/Drop-OSS/droplet.git /opt/droplet && cd /opt/droplet
 yarn
