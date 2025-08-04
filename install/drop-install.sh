@@ -30,6 +30,10 @@ msg_info "Donwloading rust nightly"
 rustup install nightly
 msg_ok "Installed Rust nightly"
 
+msg_info "Downloading gcc"
+apk add gcc
+msg_ok "Installed gcc"
+
 msg_info "Building Droplet"
 git clone https://github.com/Drop-OSS/droplet.git /opt/droplet && cd /opt/droplet
 yarn
