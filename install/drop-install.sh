@@ -16,6 +16,8 @@ update_os
 msg_info "Install dependencies"
 apk add git
 apk add yarn
+apk add cargo
+apk add node
 
 msg_info "Building Droplet"
 git clone https://github.com/Drop-OSS/droplet.git /opt/droplet && cd /opt/droplet
